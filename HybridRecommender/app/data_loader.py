@@ -1,6 +1,4 @@
 import pandas as pd
-
-'''
 from sqlalchemy import create_engine
 from app.config import host, port, user, password , database, charset
 
@@ -19,10 +17,10 @@ def load_data():
     User_Scrap = pd.read_sql("SELECT * FROM User_Scrap", engine)
     
     return Recipe, User_Cuisine, User_FoodType, User_CookingStyle, User_Scrap
+
+
+
 '''
-
-
-
 import os
 
 def load_data():
@@ -41,3 +39,4 @@ def load_data():
     User_Scrap = pd.read_csv(User_Scrap_PATH)
     
     return Recipe, User_Cuisine, User_FoodType, User_CookingStyle, User_Scrap
+'''

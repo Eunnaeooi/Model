@@ -9,13 +9,14 @@ app = FastAPI()
 Recipe, User_Cuisine, User_FoodType, User_CookingStyle, User_Scrap = load_data()
 
 
-
+'''
 # csv 테스트 전처리!
 import pandas as pd
 from datetime import datetime
 User_Scrap['created_at'] = User_Scrap['created_at'].apply(
     lambda x: datetime.now() if x == 'NOW()' else pd.to_datetime(x)
 )
+'''
 
 # 추천 모델 초기화
 hybrid_recommender = HybridRecommender()
