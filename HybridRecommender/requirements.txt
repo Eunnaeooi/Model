@@ -9,4 +9,5 @@ python-dateutil==2.8.2
 pytest==7.2.2
 pydantic==1.10.4
 pymysql==1.1.0
-sqlalchemy==2.0.23
+sqlalchemy==1.4.49  
+cryptography
